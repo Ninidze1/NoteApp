@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.LaunchedEffect
@@ -21,6 +22,7 @@ import com.ninidze.framework.presentation.navigation.NotesScreen
 import com.ninidze.framework.presentation.screen.NoteDetailScreenContent
 import com.ninidze.framework.presentation.screen.NotesScreenContent
 import com.ninidze.framework.presentation.theme.NoteAppTheme
+import com.ninidze.framework.presentation.theme.backgroundColor
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -46,7 +48,9 @@ class MainActivity : ComponentActivity() {
                 }
 
                 NavHost(
-                    modifier = Modifier.systemBarsPadding(),
+                    modifier = Modifier
+                        .systemBarsPadding()
+                        .background(color = backgroundColor),
                     navController = navController,
                     startDestination = NotesScreen
                 ) {

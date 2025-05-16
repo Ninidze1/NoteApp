@@ -31,6 +31,8 @@ import com.ninidze.domain.model.Note
 import com.ninidze.framework.R
 import com.ninidze.framework.presentation.component.NoteTextField
 import com.ninidze.framework.presentation.model.NoteActions
+import com.ninidze.framework.presentation.theme.CustomFont
+import com.ninidze.framework.presentation.theme.backgroundColor
 
 @Composable
 internal fun NoteDetailScreenContent(
@@ -40,11 +42,13 @@ internal fun NoteDetailScreenContent(
     snackBarHostState: SnackbarHostState
 ) {
     var titleValue by rememberSaveable { mutableStateOf(note?.title ?: "") }
-    var contentValue by rememberSaveable { mutableStateOf(note?.title ?: "") }
+    var contentValue by rememberSaveable { mutableStateOf(note?.content ?: "") }
 
     Scaffold(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth(),
         snackbarHost = { SnackbarHost(hostState = snackBarHostState) },
+        containerColor = backgroundColor,
         topBar = {
             IconButton(
                 onClick = onBackClick,
@@ -97,6 +101,7 @@ internal fun NoteDetailScreenContent(
                 shouldBeInitiallyFocused = true,
                 textStyle = TextStyle(
                     color = Color.Black,
+                    fontFamily = CustomFont,
                     fontSize = 28.sp,
                     fontWeight = FontWeight.Black
                 )
@@ -108,7 +113,8 @@ internal fun NoteDetailScreenContent(
                 onValueChange = { contentValue = it },
                 singleLine = false,
                 textStyle = TextStyle(
-                    color = Color.Black,
+                    color = Color.Gray,
+                    fontFamily = CustomFont,
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Normal
                 )

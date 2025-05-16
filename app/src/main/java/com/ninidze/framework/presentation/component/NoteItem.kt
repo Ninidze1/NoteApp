@@ -12,9 +12,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.ninidze.domain.model.Note
+import com.ninidze.framework.presentation.theme.CustomFont
 
 @Composable
 internal fun NoteItem(
@@ -31,13 +34,16 @@ internal fun NoteItem(
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
                 text = note.title,
-                style = MaterialTheme.typography.titleMedium
+                fontFamily = CustomFont,
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp
             )
             Spacer(Modifier.height(4.dp))
             Text(
                 text = note.content,
+                fontFamily = CustomFont,
                 style = MaterialTheme.typography.bodyMedium,
-                maxLines = 2,
+                maxLines = 4,
                 overflow = TextOverflow.Ellipsis
             )
         }
