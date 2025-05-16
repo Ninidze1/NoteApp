@@ -14,12 +14,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import com.ninidze.framework.presentation.screen.NoteDetailScreenContent
-import com.ninidze.framework.presentation.screen.NotesScreenContent
 import com.ninidze.framework.presentation.model.NoteActions
 import com.ninidze.framework.presentation.model.NoteUiEvent
 import com.ninidze.framework.presentation.navigation.NoteDetailScreen
 import com.ninidze.framework.presentation.navigation.NotesScreen
+import com.ninidze.framework.presentation.screen.NoteDetailScreenContent
+import com.ninidze.framework.presentation.screen.NotesScreenContent
 import com.ninidze.framework.presentation.theme.NoteAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 

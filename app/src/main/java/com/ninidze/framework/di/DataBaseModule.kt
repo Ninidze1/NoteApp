@@ -3,7 +3,6 @@ package com.ninidze.framework.di
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.ninidze.data.di.DataModule.Companion
 import com.ninidze.data.local.NotesDao
 import com.ninidze.data.local.NotesDatabase
 import dagger.Module

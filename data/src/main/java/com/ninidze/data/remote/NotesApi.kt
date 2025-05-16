@@ -1,8 +1,8 @@
 package com.ninidze.data.remote
 
-import com.ninidze.data.dto.CreateNoteDto
-import com.ninidze.data.dto.DeleteNoteDto
-import com.ninidze.data.dto.NoteDto
+import com.ninidze.data.remote.dto.CreateNoteDto
+import com.ninidze.data.remote.dto.DeleteNoteDto
+import com.ninidze.data.remote.dto.NoteDto
 import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET

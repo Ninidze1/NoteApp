@@ -1,4 +1,4 @@
-package com.ninidze.data.dto
+package com.ninidze.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 import com.ninidze.domain.model.CreateNote

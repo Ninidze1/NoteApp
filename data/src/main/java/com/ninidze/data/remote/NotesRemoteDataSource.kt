@@ -1,7 +1,7 @@
 package com.ninidze.data.remote
 
-import com.ninidze.data.dto.CreateNoteDto
-import com.ninidze.data.dto.NoteDto
+import com.ninidze.data.remote.dto.CreateNoteDto
+import com.ninidze.data.remote.dto.NoteDto
 import com.ninidze.domain.model.CreateNote
 import com.ninidze.domain.model.Note
 import javax.inject.Inject

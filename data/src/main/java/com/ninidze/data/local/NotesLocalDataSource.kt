@@ -1,5 +1,6 @@
 package com.ninidze.data.local
 
+import com.ninidze.data.local.dto.NoteEntity
 import com.ninidze.domain.model.Note
 import javax.inject.Inject
 
