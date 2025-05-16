@@ -1,4 +1,4 @@
-package com.ninidze.framework.ui.theme
+package com.ninidze.framework.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
